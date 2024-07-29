@@ -1,0 +1,218 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(198, 198, 198);
+}
+
+header{
+    height: 5rem;
+}
+
+.titleBar
+{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.title-img
+{
+    height: 60%;
+    margin-left: 1rem;
+}
+
+.title{
+    font-size: 1rem;
+}
+
+.menu-bar{
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+    align-items: center;
+    height: 50%;
+}
+
+
+.menu{
+    position: relative;
+}
+
+
+.menu-items
+{
+    background-color: rgb(238, 238, 238);
+    position: absolute;
+    top: 2px;
+    width: 7rem;
+    display: none;
+}
+
+.menu:hover .menu-items
+{
+    display: block;
+    cursor: pointer;
+}
+
+
+li{
+    padding: 0.25rem;
+    list-style: none;
+    position: relative;
+    right: 40px;
+    width: 150%;
+    
+}
+
+.up
+{
+    width: 155%;
+}
+
+.vol
+{
+    width: 155%;  
+}
+
+
+.up , .vol{
+    z-index: 1;
+}
+
+.menu-items:hover{
+    cursor: pointer;
+}
+
+.speedUp:hover
+{
+    background-color: lightgrey;
+}
+.speedDown:hover
+{
+    background-color: lightgrey;
+}
+
+.volup:hover
+{
+    background-color: lightgrey;
+}
+.voldown:hover
+{
+    background-color: lightgrey;
+}
+
+
+.videoInput {
+    display: none;
+}
+
+
+.menu-btn:hover
+{
+    cursor: pointer;
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+    height: calc(100vh - 8rem);
+    border: 2px solid black;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("play-button.png"); */
+}
+
+.main-img
+{
+    height: 15rem;
+    opacity: 60%;
+}
+
+.video {
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    /* position: absolute; */
+    /* z-index: 1; */
+}
+
+/* .video
+{
+    height: 250px;
+    opacity: 40%;
+    filter: drop-shadow(15px 15px 5px white);
+} */
+
+footer{
+    height:3rem;
+}
+
+
+/* .toast{
+    color: white;
+    font-size: 2rem;
+    position: fixed;
+    top: 99px;
+    right: 47px;
+    display: none;
+    background-color: bisque;
+} */
+
+.toast{
+    /* border: 2px solid whitesmoke; */
+    color: rgb(120, 120, 120);
+    font-size: 2rem;
+    display: none;
+    position: fixed;
+    top: 99px;
+    right: 70px;
+    height:30px;
+    width: 60px;
+}
+
+.footer-icons
+{
+    height:25px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.full{
+    position: absolute;
+    right: 5px;
+    /* bottom: 10px; */
+}
+
+.seek{
+    /* margin-left: 70px; */
+    width: 80vw;
+}
+
+.input-seek{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.time-stamps
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#volume
+{
+    position: absolute;
+    left:5px;
+}
